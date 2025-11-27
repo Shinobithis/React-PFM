@@ -39,7 +39,32 @@ export function TasksProvider({ children }) {
   }, []); 
 
   const getTaskById = (id) => tasks.find(task => task.id.toString() === id.toString());
-  const addTask = (newTask) => console.log('add:', newTask);
+
+  const addTask = async (newTask) => {
+    setIsLoading(true);
+    try {
+      const response = await fetch(API_BASE_URL, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(newTask),
+      });
+
+      if (!response.ok) {
+        throw new Error('Failed to add task');
+      }
+
+      const data = await response.json();
+
+      setTasks((prevTasks) => [...prevTasks, data]);
+    } catch (err) {
+      console.error("Error adding task:", err);
+    } finally {
+      setIsLoading(false);
+    }
+  };
+
   const updateTask = (id, updatedTask) => console.log('Update:', id, updatedTask);
   const deleteTask = (id) => console.log('Delete:', id);
   

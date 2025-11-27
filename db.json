@@ -1,0 +1,6 @@
+{
+  "tasks": [
+    { "id": 1, "titre": "Réviser le Routage", "description": "Comprendre les bases de React Router", "statut": "Doing" },
+    { "id": 2, "titre": "Mettre en place l'API", "description": "Configurer json-server", "statut": "Done" }
+  ]
+}

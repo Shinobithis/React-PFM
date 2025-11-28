@@ -1,10 +1,64 @@
 {
   "tasks": [
     {
-      "titre": "Hello",
-      "description": "Configurer json-server",
-      "statut": "Done",
-      "id": "2"
+      "id": 1,
+      "titre": "Review React Hooks (useState & useEffect)",
+      "description": "Understand the dependency array and when to clean up effects.",
+      "statut": "Done"
+    },
+    {
+      "id": 2,
+      "titre": "Set Up Project Structure",
+      "description": "Organize components, context, and pages folders.",
+      "statut": "Done"
+    },
+    {
+      "id": 3,
+      "titre": "Implement Global State (Context API)",
+      "description": "Move the tasks array and CRUD functions into TasksContext.jsx.",
+      "statut": "Doing"
+    },
+    {
+      "id": 4,
+      "titre": "Integrate React Router DOM",
+      "description": "Define routes for '/', '/add', and '/edit/:id' in App.jsx.",
+      "statut": "Done"
+    },
+    {
+      "id": 5,
+      "titre": "Create Controlled Form Components",
+      "description": "Build the AddTask form and manage input state with useState.",
+      "statut": "Doing"
+    },
+    {
+      "id": 6,
+      "titre": "Complete POST (Create) Logic",
+      "description": "Write the async fetch function for adding new tasks to json-server.",
+      "statut": "Doing"
+    },
+    {
+      "id": 7,
+      "titre": "Implement DELETE (Suppression) Functionality",
+      "description": "Ensure the deleteTask function sends the DELETE request and updates the local state.",
+      "statut": "To do"
+    },
+    {
+      "id": 8,
+      "titre": "Develop the EditTask Page",
+      "description": "Use useParams and getTaskById to pre-fill the modification form.",
+      "statut": "To do"
+    },
+    {
+      "id": 9,
+      "titre": "Apply DaisyUI Styling to Forms",
+      "description": "Use classes like 'input input-bordered' and 'select select-bordered' for Add/Edit forms.",
+      "statut": "To do"
+    },
+    {
+      "id": 10,
+      "titre": "Final Project Testing",
+      "description": "Test full CRUD cycle, status changes, and responsive design.",
+      "statut": "To do"
     }
   ]
 }

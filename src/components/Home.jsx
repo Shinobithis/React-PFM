@@ -39,21 +39,22 @@ function Home() {
                                 <p className="text-sm text-gray-600">{task.description}</p>
                             </div>
 
-                            <div className="flex items-center space-x-4">
+                            <div className="flex items-center space-x-4 mt-2 md:mt-0">
+                                
                                 <span className={`px-3 py-1 text-sm font-medium rounded-full ${getStatusStyle(task.statut)}`}>
                                     {task.statut}
                                 </span>
 
                                 <Link 
                                     to={`/edit/${task.id}`} 
-                                    className="text-blue-600 hover:text-blue-800 transition-colors"
+                                    className="bg-blue-500 text-white px-3 py-1 rounded-md hover:bg-blue-600 transition-colors text-sm"
                                 >
                                     Modifie
                                 </Link>
                                 
                                 <button 
                                     onClick={() => deleteTask(task.id)} 
-                                    className="text-red-600 hover:text-red-800 transition-colors"
+                                    className="bg-red-600 text-white px-3 py-1 rounded-md hover:bg-red-700 transition-colors text-sm"
                                 >
                                     Delete
                                 </button>
